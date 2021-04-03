@@ -2,34 +2,50 @@ import cv2
 import numpy as np
 import os
 from time import time
-from vision import Vision
-import PNGImages
+from PIL import Image
 import matplotlib.pyplot as plt
 
-trained_face_data = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+def draw_rect(img, rect):
+    line_color = (0, 255, 0)
+    line_type = cv2.LINE_4
+    for (x, y, w, h) in rect:
+        topL = (x, y)
+        bottomR = (x + w, y + h)
+        cv2.rectangle(img, topL, bottomR, line_color, 2)
+        return img
+cascade_body = cv2.CascadeClassifier('cascade12/cascade.xml')
 
-img = cv2.imread("PNGImages/FudanPed00001.png")
-print(img)
+img = cv2.imread("posImg/FudanPed00008.png")
+g_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+rectangles = cascade_body.detectMultiScale(g_img)
+
+new_img = draw_rect(img, rectangles)
+cv2.imshow('trained', new_img)
+
+#img = cv2.imread("pos2/FudanPed00001.png")
+#print(img)
 
 print("Hi")
 
-cv2.imshow('Me', img)
+#cv2.imshow('Me', img)
 webcam = cv2.VideoCapture(0)
-cv2.waitKey()
+
+cv2.waitKey(0)
 
 ## to use video file as input
-# webcam = cv2.VideoCapture('video.mp4')
+
+
 
 while True:
     successful_frame_read, frame = webcam.read()
 
     grayscaled_img = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    face_coordinates = trained_face_data.detectMultiScale(grayscaled_img)
+    body_coordinates = cascade_body.detectMultiScale(grayscaled_img)
 
     #draw rectangle
 
-    for (x, y, w, h) in face_coordinates:
+    for (x, y, w, h) in body_coordinates:
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
 

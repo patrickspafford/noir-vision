@@ -1,10 +1,10 @@
 import cv2
-import PNGImages
+
 import matplotlib.pyplot as plt
 
 trained_face_data = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-img = cv2.imread("PNGImages/FudanPed00001.png")
+img = cv2.imread("posImg/FudanPed00001.png")
 print(img)
 
 print("Hi")
