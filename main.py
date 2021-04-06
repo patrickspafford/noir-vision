@@ -3,7 +3,12 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import cv2
-import Body_Detector
+#import Face_Detector
+#import Body_Detector
+#import annotate
+#import train
+#import test
+import masks
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -11,7 +16,7 @@ def print_hi(name):
 
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__Body_Detector__':
+if __name__ == '__train__':
 
     print_hi('PyCharm')
 
