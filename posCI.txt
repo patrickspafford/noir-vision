@@ -1,0 +1,120 @@
+posImg\FudanPed00001.png 413 167 124 324
+posImg\FudanPed00002.png 64 91 128 291
+posImg\FudanPed00003.png 294 130 161 295
+posImg\FudanPed00004.png 161 56 172 285
+posImg\FudanPed00005.png 178 52 148 286
+posImg\FudanPed00006.png 232 105 121 287
+posImg\FudanPed00007.png 107 65 122 285
+posImg\FudanPed00008.png 246 153 126 284
+posImg\FudanPed00009.png 306 135 150 290
+posImg\FudanPed00010.png 280 86 99 293
+posImg\FudanPed00011.png 276 111 157 286
+posImg\FudanPed00012.png 150 65 150 301
+posImg\FudanPed00013.png 380 192 177 297
+posImg\FudanPed00014.png 267 78 90 290
+posImg\FudanPed00015.png 19 42 158 285
+posImg\FudanPed00016.png 87 77 123 306
+posImg\FudanPed00017.png 117 47 105 284
+posImg\FudanPed00018.png 21 19 100 290
+posImg\FudanPed00019.png 186 116 154 307
+posImg\FudanPed00020.png 361 91 146 286
+posImg\FudanPed00021.png 318 73 148 293
+posImg\FudanPed00022.png 394 165 121 289
+posImg\FudanPed00023.png 205 81 147 290
+posImg\FudanPed00024.png 97 80 168 289
+posImg\FudanPed00025.png 227 66 160 292
+posImg\FudanPed00026.png 39 71 113 318
+posImg\FudanPed00027.png 93 40 160 297
+posImg\FudanPed00028.png 6 14 144 294
+posImg\FudanPed00029.png 242 70 124 284
+posImg\FudanPed00030.png 67 78 140 301
+posImg\FudanPed00031.png 288 123 150 291
+posImg\FudanPed00032.png 447 159 129 297
+posImg\FudanPed00033.png 161 52 149 294
+posImg\FudanPed00034.png 109 32 146 302
+posImg\FudanPed00035.png 58 37 137 294
+posImg\FudanPed00036.png 130 96 148 300
+posImg\FudanPed00037.png 260 59 146 292
+posImg\FudanPed00038.png
+posImg\FudanPed00039.png
+posImg\FudanPed00040.png
+posImg\FudanPed00041.png
+posImg\FudanPed00042.png
+posImg\FudanPed00043.png
+posImg\FudanPed00044.png
+posImg\FudanPed00045.png
+posImg\FudanPed00046.png
+posImg\FudanPed00047.png
+posImg\FudanPed00048.png
+posImg\FudanPed00049.png
+posImg\FudanPed00050.png
+posImg\FudanPed00051.png
+posImg\FudanPed00052.png
+posImg\FudanPed00053.png
+posImg\FudanPed00054.png
+posImg\FudanPed00055.png
+posImg\FudanPed00056.png
+posImg\FudanPed00057.png
+posImg\FudanPed00058.png
+posImg\FudanPed00059.png
+posImg\FudanPed00060.png
+posImg\FudanPed00061.png
+posImg\FudanPed00062.png
+posImg\FudanPed00063.png
+posImg\FudanPed00064.png
+posImg\FudanPed00065.png
+posImg\FudanPed00066.png
+posImg\FudanPed00067.png
+posImg\FudanPed00068.png
+posImg\FudanPed00069.png
+posImg\FudanPed00070.png
+posImg\FudanPed00071.png
+posImg\FudanPed00072.png
+posImg\FudanPed00073.png
+posImg\FudanPed00074.png
+posImg\PennPed00001.png
+posImg\PennPed00002.png
+posImg\PennPed00003.png
+posImg\PennPed00004.png
+posImg\PennPed00005.png
+posImg\PennPed00006.png
+posImg\PennPed00007.png
+posImg\PennPed00008.png
+posImg\PennPed00009.png
+posImg\PennPed00010.png
+posImg\PennPed00011.png
+posImg\PennPed00012.png
+posImg\PennPed00013.png
+posImg\PennPed00014.png
+posImg\PennPed00015.png
+posImg\PennPed00016.png
+posImg\PennPed00017.png
+posImg\PennPed00023.png
+posImg\PennPed00024.png
+posImg\PennPed00028.png
+posImg\PennPed00031.png
+posImg\PennPed00032.png
+posImg\PennPed00037.png
+posImg\PennPed00038.png
+posImg\PennPed00040.png
+posImg\PennPed00041.png
+posImg\PennPed00054.png
+posImg\PennPed00064.png
+posImg\PennPed00065.png
+posImg\PennPed00067.png
+posImg\PennPed00075.png
+posImg\PennPed00076.png
+posImg\PennPed00077.png
+posImg\PennPed00078.png
+posImg\PennPed00079.png
+posImg\PennPed00082.png
+posImg\PennPed00085.png
+posImg\PennPed00086.png
+posImg\PennPed00087.png
+posImg\PennPed00088.png
+posImg\PennPed00089.png
+posImg\PennPed00090.png
+posImg\PennPed00091.png
+posImg\PennPed00093.png
+posImg\PennPed00094.png
+

@@ -1,3 +1,5 @@
-projectVenv/
+projectVenv/*
 
 .vscode/
+
+__pycache__/*
