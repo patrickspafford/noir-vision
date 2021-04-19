@@ -5,7 +5,7 @@ from argparse import ArgumentParser
 from imutils import resize
 from os.path import join, exists
 from os import mkdir
-from cv2 import HOGDescriptor, HOGDescriptor_getDefaultPeopleDetector, imwrite, rectangle, imread
+from cv2 import HOGDescriptor, HOGDescriptor_getDefaultPeopleDetector, imwrite, rectangle, imread, putText, FONT_HERSHEY_SIMPLEX
 
 """
 ap = ArgumentParser()
@@ -64,9 +64,21 @@ def find_people_in_frame(inputFrame, detector=HOGDescriptor_getDefaultPeopleDete
     (rects, _) = hog.detectMultiScale(
         image, winStride=(4, 4), padding=(8, 8), scale=1.05)
     for (x, y, w, h) in rects:
-        rectangle(orig, (x, y), (x+w, y+h), (0, 0, 255), 2)
+        rectangle(orig, (x, y), (x+w, y+h), (255, 0, 0), 2)
     rects = array([[x, y, x+w, y+h] for (x, y, w, h) in rects])
     merged_rects = nms(rects, probs=None, overlapThresh=0.65)
     for (xA, yA, xB, yB) in merged_rects:
         rectangle(image, (xA, yA), (xB, yB), (0, 255, 0), 2)
+        size_of_image = image.shape[0] * image.shape[1]
+        size_of_window = abs(xA - xB) * abs(yA - yB)
+        portion_occupied = (size_of_image / size_of_window) * 100
+        color = None
+        if portion_occupied >= 0.1:
+            color = (255, 0, 0)
+        elif portion_occupied >= 0.05:
+            color = (0, 0, 255)
+        else:
+            color = (0, 255, 0)
+        putText(
+            image, f'Threat Level: {round(abs(xA - xB) * abs(yA - yB) * 1 / 150)}', (xA, yA-10), FONT_HERSHEY_SIMPLEX, 0.9, color, 2)
     return image
