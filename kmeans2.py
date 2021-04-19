@@ -6,7 +6,7 @@ from os.path import isfile, join, isdir
 
 def save_kmeans_image(source_path, k, output_path):
     ori_image = cv.imread(source_path)
-    img = cv.cvtColor(ori_image, cv.COLOR_BGR2RGB)
+    img = ori_image.copy()
     vectorized_img = img.reshape((-1, 3))
     new_vectorized_img = np.float32(vectorized_img)
     stopping_criteria = (cv.TERM_CRITERIA_EPS +
@@ -21,7 +21,7 @@ def save_kmeans_image(source_path, k, output_path):
 
 
 def transform_kmeans(frame, k):
-    img = cv.cvtColor(frame, cv.COLOR_BGR2RGB)
+    img = frame.copy()
     vectorized_img = img.reshape((-1, 3))
     new_vectorized_img = np.float32(vectorized_img)
     stopping_criteria = (cv.TERM_CRITERIA_EPS +
@@ -53,7 +53,5 @@ def save_multiple_kmeans_dir(source_folder, output_folder, k_step, k_min, k_max)
         save_kmeans_directory(source_folder, k, output_folder_for_k)
 
 
-"""
 save_multiple_kmeans_dir('/Users/patrickspafford/Desktop/Machine Learning/finalProject/iron',
-                         '/Users/patrickspafford/Desktop/Machine Learning/finalProject/ironK', 2, 2, 5)
-"""
+                         '/Users/patrickspafford/Desktop/Machine Learning/finalProject/ironK', 20, 2, 100)

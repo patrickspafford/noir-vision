@@ -47,6 +47,7 @@ def get_images_from_live_video(output_path, seconds_per_frame=1):
     cv.destroyAllWindows()
 
 
+"""
 def run_trained_svm(output_path, seconds_per_frame, classifier, preprocessor, preprocessor_k=5):
     cam = cv.VideoCapture(0)
     try:
@@ -69,6 +70,7 @@ def run_trained_svm(output_path, seconds_per_frame, classifier, preprocessor, pr
             break
     cam.release()
     cv.destroyAllWindows()
+"""
 
 
 """
